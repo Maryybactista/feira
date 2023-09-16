@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Aqui vai aparecer uma imagem na guia -->
+    <link rel="icon" href="../img/icon do quiz.png">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Quiz</title>
+</head>
+<body>
+   <!-- Parte do conômetro -->
+   <div class="timer">
+    <p id="cronometro">0:00</p>
+      </div>
+  <main class="tela-principal">
+
+    <section class='conteudos'>
+
+        <article class='centro' id='instrucoes'>
+            <p>Teste seu conhecimento em matemática</p> 
+        </article>
+        <article class='questoes'>
+            
+            <header class='questao'>
+                <span id='numQuestao'></span>
+                <h2 id='pergunta'></h2>
+            </header>
+
+            <div class='corpo'>
+                <ol type='A' id='alternativas'>
+                    <li id='a' value='1A' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                    <li id='b' value='1B' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                    <li id='c' value='1C' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                </ol>
+            </div>
+        </article>
+        
+        <article id='aviso'>Questão <span id='numero'></span> de <span id='total'></span></article>
+        
+    </section>
+    <div class="prox">
+    </div>
+    <br><br>
+    <footer>
+      <p>Desenvolvido por Carlos Eduardo, Julia Almeida, Leonardo Silva, Mariane Batista, Robert Guimarães e Thiago Garcia &copy; <br><p class="center">3°NT</p><p class="center">2023</p></p>
+    </footer>
+    <script src="../js/pag1.js"></script>
+</body>
+</html>
